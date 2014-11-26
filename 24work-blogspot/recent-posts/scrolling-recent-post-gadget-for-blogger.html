@@ -1,0 +1,27 @@
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+
+
+<style>img.recent_thumb {padding:1px;width:55px;height:55px;border:0;float:right;margin:0 0 5px 10px;}.recent_posts_with_thumbs {float: left;width: 100%;min-height: 70px;margin: 5px 0px 5px 0px;padding: 0;font-size:12px;}ul.recent_posts_with_thumbs li {padding-bottom:5px;padding-top:5px;min-height:65px;}.recent_posts_with_thumbs a {text-decoration:none;}.recent_posts_with_thumbs strong {font-size:10px;}</style><a href="http://24work.blogspot.com/" rel="dofollow" target="_blank" title="Blogger Tips and Tricks"><img src="https://bitly.com/24workpng1" alt="Blogger Tips and Tricks" border="0" style="position: fixed; bottom: 10%; right: 0%; top: 0px;" /></a><a href="http://24work.blogspot.com/" rel="dofollow" target="_blank" title="Latest Tips For Bloggers"><img src="https://bitly.com/24workpng1" alt="Latest Tips For Bloggers" border="0" style="position: fixed; bottom: 10%; right: 0%;" /></a><a href="http://24work.blogspot.com/" rel="dofollow" target="_blank" title="Blogger Tricks"><img src="https://bitly.com/24workpng1" alt="Blogger Tricks" border="0" style="position: fixed; bottom: 10%; left: 0%;" /></a><script style='text/javascript' src="http://dl.dropboxusercontent.com/s/83365z7wnbo6025/hb-recentposts-ycode.js" ></script>
+<script style='text/javascript' src='http://24work-new.googlecode.com/svn/trunk/24work-blogspot/recent-posts/hb-jquery-ticker-nocode.js'></script>
+<script style='text/javascript'>
+var numposts = 7;
+var showpostthumbnails = true;
+var displaymore = false;
+var displayseparator = false;
+var showcommentnum = false;
+var showpostdate = false;
+var showpostsummary = true;
+var numchars = 100;
+$(document).ready(function () {$('#sai').vTicker({
+speed: 500,
+pause: 3000,
+showItems: 3,
+animation: 'fade',
+mousePause: false,
+height: 0,
+direction: 'up'
+});});
+</script>
+<div id="sai">
+<script src='http://24work.blogspot.com/feeds/posts/default?orderby=published&alt=json-in-script&callback=showrecentpostswiththumbs'></script>
+</div>
