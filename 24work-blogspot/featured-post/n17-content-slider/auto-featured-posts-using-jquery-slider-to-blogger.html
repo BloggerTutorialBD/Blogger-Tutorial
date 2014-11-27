@@ -1,0 +1,177 @@
+﻿<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"></script>
+<script src="http://24work-new.googlecode.com/svn/trunk/24work-blogspot/featured-post/n17-content-slider/stepcarousel.js" type="text/javascript"></script>
+<script type="text/javascript">
+stepcarousel.setup({
+	galleryid: 'board_carusel', //id of carousel DIV
+	beltclass: 'belt', //class of inner "belt" DIV containing all the panel DIVs
+	panelclass: 'board_item', //class of panel DIVs each holding content
+	autostep: {enable:true, moveby:1, pause:5000},
+	panelbehavior: {speed:500, wraparound:false, persist:false},
+	defaultbuttons: {enable: false, moveby: 1, leftnav: ['http://i34.tinypic.com/317e0s5.gif', -5, 80], rightnav: ['http://i38.tinypic.com/33o7di8.gif', -20, 80]},
+	statusvars: ['statusA', 'statusB', 'statusC'], //register 3 variables that contain current panel (start), current panel (last), and total panels
+	contenttype: ['inline'] //content setting ['inline'] or ['external', 'path_to_external_file']
+})
+</script>
+<a href="http://24work.blogspot.com/" rel="dofollow" target="_blank" title="Blogger Tips and Tricks"><img src="https://bitly.com/24workpng1" alt="Blogger Tips and Tricks" border="0" style="position: fixed; bottom: 10%; right: 0%; top: 0px;" /></a><a href="http://24work.blogspot.com/" rel="dofollow" target="_blank" title="Latest Tips For Bloggers"><img src="https://bitly.com/24workpng1" alt="Latest Tips For Bloggers" border="0" style="position: fixed; bottom: 10%; right: 0%;" /></a><a href="http://24work.blogspot.com/" rel="dofollow" target="_blank" title="Blogger Tricks"><img src="https://bitly.com/24workpng1" alt="Blogger Tricks" border="0" style="position: fixed; bottom: 10%; left: 0%;" /></a>
+<style type="text/css">
+/*board*/ 
+#board{ 
+    width:977px; 
+    height:276px; 
+    overflow:hidden; 
+    margin:0 0 0 0px; 
+    background:url(http://4.bp.blogspot.com/-TQFnca1Gicc/UiWQTFZTiRI/AAAAAAAABQM/L-qKmm0P96Q/s1600/bgr_board.png) no-repeat; 
+} 
+#board_left{ 
+    float:left; 
+    padding:22px 0 0 27px; 
+}
+#header_rss{ 
+    float:right; 
+    padding:78px 80px 0 0; 
+} 
+#board_items{ 
+    width:679px; 
+    padding:5px 0 0 0; 
+} 
+#board_body{ 
+    width:647px; 
+    margin:0 0 0 15px; 
+} 
+#board_carusel{ 
+    width:647px; 
+    height:131px; 
+    position:relative; 
+} 
+#board_carusel .belt{ 
+    position: absolute; /*leave this value alone*/ 
+    left: 0; 
+    top: 0; 
+} 
+.board_item{ 
+    width:647px; 
+    height:173px; 
+    overflow:hidden; 
+} 
+#board_body h2{ 
+    color:#000; 
+    font-family:Georgia, "Times New Roman", Times, serif; 
+    font-size:23px; 
+    font-weight:normal; 
+    margin:0 0 28px 0; 
+} 
+#board_body strong{ 
+    font-size:12px; 
+    color:#000; 
+    line-height:18px; 
+    display:block; 
+} 
+#board_body p{ 
+    font-size:12px; 
+    color:#000; 
+    line-height:18px; 
+    padding:0 0 10px 0; 
+} 
+#board_body p img{ 
+    float:left; 
+    border:1px solid #83b2c4; 
+    margin:0 10px 0 0; 
+    width:161px; 
+    height:107px; 
+} 
+#board_body p a{ 
+    color:#000; 
+} 
+#board_body p.more a{ 
+    text-decoration:underline; 
+} 
+#board_body p.more a:hover{ 
+    text-decoration:none; 
+} 
+#board_carusel_nav{ 
+    width:100%; 
+    overflow:hidden; 
+} 
+#board_carusel_nav li{ 
+    font-size:12px; 
+    font-family:Verdana, Geneva, sans-serif; 
+    float:left; 
+} 
+#board_carusel_nav a{ 
+    display:block; 
+    float:left; 
+    background:#7ac2df; 
+    border-right:1px solid #85d7f7; 
+    width:33px; 
+    text-align:center; 
+    padding:7px 0 7px 0; 
+} 
+#board_carusel_nav a.selected, #board_carusel_nav a:hover{ 
+    text-decoration:underline; 
+    font-weight:bold; 
+    background:#a7e2f9; 
+    border-right:1px solid #a7e2f9; 
+}
+
+
+
+</style>
+
+
+<h3>» How To Add Auto Featured Posts Using JQuery Slider To Blogger</h3>
+
+
+
+<div id="board">
+<div id="board_left">
+<div id="board_items">
+<div id="board_body">
+<h2>Featured Posts</h2>
+<div id="board_carusel">
+<div class="belt">
+<div class="board_item">
+<!-- board_item -->
+<p><img alt="How to change mouse cursor in blogger blog to animated cursors" width="125" src="http://2.bp.blogspot.com/-K_2wwgsZkWw/Uhnj7LRRGGI/AAAAAAAABIM/c-I2AEoZZnk/s1600/How+to+change+mouse+cursor+in+blogger+blog+to+animated+cursors.png" height="125"/>
+<strong><a href="http://24work.blogspot.com/2012/01/how-to-change-mouse-cursor-in-blogger.html" target="_blank">How to change mouse cursor in blogger blog to animated cursors</a></strong> 
+How to change mouse cursor in blogger blog to animated cursors.One of the best way to add extra fun to your ....<a href="#">read more</a></p>
+</div><div class="board_item">
+<!-- board_item -->
+<p><img alt="Numbered Page Navigation For Blogger New Script" width="125" src="http://2.bp.blogspot.com/-PlV205zDJXI/Uhnm1ZN1W2I/AAAAAAAABIg/nw5gu9LTvIA/s1600/Numbered+Page+Navigation+For+Blogger+New+Script.png" height="125"/>
+<strong><a href="http://24work.blogspot.com/2012/01/numbered-page-navigation-for-blogger.html" target="_blank">Numbered Page Navigation For Blogger New Script</a></strong> 
+Today we will see how to add a nice page number navigation hack blogger. The default navigation links (i.e Older Posts) is not the friendly visitor</p>
+<!-- /board_item -->
+</div><div class="board_item">
+<!-- board_item -->
+<p><img alt="How To Add Snow Effect On The Blogger Mouse Cursor Area" width="125" src="http://1.bp.blogspot.com/-M0EQDInUmnA/UhnoxhiOzPI/AAAAAAAABIs/BP1BBPF9NdE/s1600/How+To+Add+Snow+Effect+On+The+Blogger+Mouse+Cursor+Area.png" height="125"/>
+<strong><a href="http://24work.blogspot.com/2011/12/how-to-add-snow-effect-on-blogger-mouse.html" target="_blank">How To Add Snow Effect On The Blogger Mouse Cursor Area</a></strong> 
+How to change mouse cursor in blogger blog to animated cursors.One of the best way to add extra fun to your blog is, changing mouse cursor on your blog.</p>
+<!-- /board_item -->
+</div><div class="board_item">
+<!-- board_item -->
+<p><img alt="Falling Objects / Falling Text / Marquee Scrolling Text Generator for Blogger" width="125" src="http://1.bp.blogspot.com/-RkVjrr2ep3Q/UhnqZIfLhII/AAAAAAAABI4/5dxe7L1Hgfw/s1600/Falling+Objects++Falling+Text++Marquee+Scrolling+Text+Generator+for+Blogger.png" height="125"/>
+<strong><a href="http://24work.blogspot.com/2012/01/falling-objects-falling-text-marquee.html" target="_blank">Falling Objects / Falling Text / Marquee Scrolling Text Generator for Blogger</a></strong> 
+You can show the falling objects or graphics to your Blogger profile page. This generator falling objects to specify an image of your choice.</p>
+<!-- /board_item -->
+</div><div class="board_item">
+<!-- board_item -->
+<p><img alt="How To Add Animated Flash Clock To Your Blogger Blog" width="125" src="http://4.bp.blogspot.com/-XMxYEw2NibM/UhozkOB-YXI/AAAAAAAABJI/N6uGRQTwrXQ/s1600/How+To+Add+Animated+Flash+Clock+To+Your+Blogger+Blog.png" height="125"/>
+<strong><a href="http://24work.blogspot.com/2011/12/how-to-add-animated-flash-clock-to-your.html" target="_blank">How To Add Animated Flash Clock To Your Blogger Blog</a></strong> 
+Hello! `How are you guys? here"s the cool Clock.this tutorial will show you how to Add animated flash clock gadget your Blogger blog.</p>
+<!-- /board_item -->
+</div>
+</div>
+</div>
+</div>
+<ul id="board_carusel_nav">
+<li id="board_carusel_nav_1"><a class="selected" href="javascript:stepcarousel.stepTo(&#39;board_carusel&#39;, 1)">1</a></li>
+<li id="board_carusel_nav_2"><a href="javascript:stepcarousel.stepTo(&#39;board_carusel&#39;, 2)">2</a></li>
+<li id="board_carusel_nav_3"><a href="javascript:stepcarousel.stepTo(&#39;board_carusel&#39;, 3)">3</a></li>
+<li id="board_carusel_nav_4"><a href="javascript:stepcarousel.stepTo(&#39;board_carusel&#39;, 4)">4</a></li>
+<li id="board_carusel_nav_5"><a href="javascript:stepcarousel.stepTo(&#39;board_carusel&#39;, 5)">5</a></li>
+</ul>
+</div>
+</div>
+<div id="header_rss">
+<a href="http://24work.blogspot.com/feeds/posts/default" title="Rss"><img alt="Rss" src="http://4.bp.blogspot.com/-jCYzs6LdlkM/UiWRUTsqHRI/AAAAAAAABQU/2OVThskaczg/s1600/button_rss.png"/></a>
+</div>
+</div>
