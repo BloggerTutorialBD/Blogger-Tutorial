@@ -1,0 +1,59 @@
+#recent-posts ul {
+list-style: none outside none;
+text-align: left;
+}
+#recent-posts ul {
+padding-left: 0px;
+counter-reset: popcount;
+}
+#recent-posts a {
+color: #777;
+}
+#recent-posts a:hover {
+color: #111;
+}
+#recent-posts ul li:before {
+list-style-type: none;
+margin-right: 10px;
+padding: 0.3em 0.6em;
+counter-increment: popcount;
+content: counter(popcount);
+color: #FFF;
+position: relative;
+float: left;
+font: italic bold 15px Tahoma;
+margin-left:5px;
+background: #56c55f;
+border-radius: 25px 25px 25px 25px;
+border: 2px solid #EEE;
+box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+margin-top:-2px;
+}
+#recent-posts ul li {
+border: 1px solid #eaeaea;
+background:#fff;background:-moz-linear-gradient(top,#fff 0%,#f2f2f2 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#fff),color-stop(100%,#f2f2f2));background:-webkit-linear-gradient(top,#fff 0%,#f2f2f2 100%);background:-o-linear-gradient(top,#fff 0%,#f2f2f2 100%);background:-ms-linear-gradient(top,#fff 0%,#f2f2f2 100%);background:linear-gradient(to bottom,#fff 0%,#f2f2f2 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff',endColorstr='#f2f2f2',GradientType=0 );
+font: normal 12px verdana;
+height: 30px;
+-moz-transition: all 0.700s ease-out;
+-o-transition: all 0.700s ease-out;
+-webkit-transition: all 0.700s ease-out;
+-ms-transition: all 0.700s ease-out;
+transition: all 0.700s ease-out;
+}
+#recent-posts ul li:hover {
+border: 1px dashed #bbbbbb;
+-moz-transition: all 0.700s ease-out;
+-o-transition: all 0.700s ease-out;
+-webkit-transition: all 0.700s ease-out;
+-ms-transition: all 0.700s ease-out;
+transition: all 0.700s ease-out;
+}
+#recent-posts ul li a:hover {
+text-decoration:none;
+color: #000;
+-moz-transition: all 0.700s ease-out;
+-o-transition: all 0.700s ease-out;
+-webkit-transition: all 0.700s ease-out;
+-ms-transition: all 0.700s ease-out;
+transition: all 0.700s ease-out;
+}

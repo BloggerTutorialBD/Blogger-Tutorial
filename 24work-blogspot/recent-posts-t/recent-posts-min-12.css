@@ -1,0 +1,7 @@
+#recent-posts {clear: both;}
+#recent-posts ul{margin: 20px 0; padding: 0;list-style: none;}
+#recent-posts ul li {border-top: 1px solid #333;border-bottom: 1px solid #111;background: #222;}
+#recent-posts ul li:first-child {border-top: none;}
+#recent-posts ul li:last-child {border-bottom: none;}
+#recent-posts ul li a {padding: 2px;display: block;color: #fff;text-decoration: none;cursor: pointer; -webkit-transition: padding-left 250ms ease-out; -moz-transition: padding-left 250ms ease-out; /* trans pattern: property duration timingMethod delay */}
+#recent-posts ul li a:hover {padding-left: 20px;background: #111;}

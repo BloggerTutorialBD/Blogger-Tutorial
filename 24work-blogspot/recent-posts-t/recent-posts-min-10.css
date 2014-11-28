@@ -1,0 +1,69 @@
+#recent-posts h2{
+padding:7px 0 3px 0;
+width:100%;
+margin:0;
+font-size:1.3em;
+text-indent:-12px;
+font-size:18px;
+text-align:center;
+color: #000; /* Color of the widget's title */
+}
+#recent-posts ul{
+list-style:none;
+counter-reset:li;
+padding:8px 0px 1px;
+left:-8px;
+
+}
+#recent-posts li{
+position:relative;
+margin:0 0 10px 0;
+padding: 3px 2px 0 7px;
+
+
+border:1px solid #ccc;
+}
+#recent-posts ul li:before{
+content:counter(li);
+counter-increment:li;
+position:absolute;
+display:block;
+top:-5px;
+left:-5px;
+font-size:18px;
+width:14px;
+margin:0 0 10px 0;
+padding:4px 4px 4px 3px;
+color:#333;
+text-align:left;
+background:#E8E8E8;
+text-indent:2px;
+}
+#recent-posts ul li:after{
+content:"";
+position:absolute;
+top:-5px;
+left:15px;
+width: 0px;
+height: 0px;
+border-top:5px outset transparent;
+border-left:5px solid #aeaeae; 
+}
+
+#recent-posts ul li a{
+font-size:17px; /* Font size of the links */
+color:#444; /* Color of the links */
+font-style: italic;
+margin-left:17px;
+display:block;
+
+text-decoration:none;
+padding:0 4px 3px 0;
+}
+#recent-posts ul li:hover{
+background:#f9f9f9;
+border:1px solid #aaa;
+}
+#recent-posts ul li a:hover{
+color:#0174DF;
+}
