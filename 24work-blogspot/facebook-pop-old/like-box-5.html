@@ -1,0 +1,265 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Facebook Popup Widget with Lightbox Effect</title>
+<style>
+
+body { font-family:arial; font-size:14px; background-image:url('http://2.bp.blogspot.com/_jM8-wHc3NKY/TTn1fs8EP7I/AAAAAAAAASg/iemyCUBOEmw/s1600/bgpattern.png'); background-repeat:repeat; }
+#page-wrap { text-align:center; width:950px; margin-left:auto; margin-right:auto; margin-top:20px; }
+#header { height:60px; margin-top:20px; margin-bottom:20px; width:100%; text-align:center; 
+	/*background-color: #F5F4F2; border:2px ridge #FFFFFF;*/
+ }
+#content { background-color:white; width:900px; padding:20px; text-align:left; margin-top:10px; border:2px solid gray;  }
+h1 { padding:20px 10px 20px 10px; color:FF9500; margin:0; text-shadow: #FFFFFF 2px 2px 2px; }
+.large { font-size:22px; }
+.orange { color:orange; }
+.italic { font-style:italic }
+.textmiddle {vertical-align:middle;} 
+.padout { padding-left:25px; padding-right:25px; }
+.rounded-corners {
+     -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -khtml-border-radius: 40px;
+    border-radius: 40px;
+}
+h2 { font-size:22px; color:#ed6a34; padding:10px 10px 10px 20px; 
+	text-shadow: white 1px 1px 1px;
+	margin:0;
+  }
+  p { margin-left:20px; font-size:14px; font-family:Georgia,Serif; }
+.scrolldown { padding-left:20px; color:#EDECE8; font-size:40px; font-weight:bold; vertical-align:middle;
+	text-shadow: #6374AB 2px 2px 2px;
+ }
+ #footer {  height:40px; margin-bottom:20px; width:100%; text-align:center; 
+ margin-top:20px;
+ text-align:center; 
+ vertical-align:middle;
+ } 
+  #footer p { font-size:12px; color:#F8FACF; font-weight:bold; }
+  #footer a {text-decoration:none; color:#F8FACF; font-weight:bold;}
+  
+.backtoblog { width:950px; padding:10px; margin-top:20px; margin-bottom:20px; font-size:18px; text-align:left; }
+a img{ text-decoration:none; border:none; }
+
+.clearing { clear:both; }
+
+.singledemo { height:140px; width:960px; margin-bottom:20px; border:2px ridge #FFFFFF;
+	/*background-image:url('http://2.bp.blogspot.com/_jM8-wHc3NKY/TTn1fs8EP7I/AAAAAAAAASg/iemyCUBOEmw/s1600/bgpattern.png'); background-repeat:repeat;*/
+	background-color:#F5F4F2; text-align:center;
+}
+.demo-item-picture img { opacity:0.8; }
+.demo-item-picture img:hover { opacity:1.0; }
+
+#social-icons { float:right; position:relative; right:5px; top:5px;  }
+.social-icon { opacity:0.8; }
+.social-icon:hover { opacity:1.0; }
+#slogan { color:F8FACF; font-weight:bold; font-size:16px; margin:0px 0px 0px 0px; }
+/* 
+http://2.bp.blogspot.com/_jM8-wHc3NKY/TTn1fs8EP7I/AAAAAAAAASg/iemyCUBOEmw/s1600/bgpattern.png
+http://2.bp.blogspot.com/_jM8-wHc3NKY/TTn1fs8EP7I/AAAAAAAAASg/iemyCUBOEmw/s1600/bgpattern.png
+*/
+.demo-item-picture { float:left; width:400px; height:140px;  }
+.demo-item-picture  img { width:400px; height:140px; }
+.demo-item-links { display:inline-block; width:550px; height:140px; }
+.demo-item-links h2 { background-color:#EBE9E6; }
+.demo-item-links img { width:135px; height:30px; }
+
+</style>
+
+</head>
+
+<div id="page-wrap">
+
+<div id="header">
+
+<a href="http://24work.blogspot.com/"><img src='http://3.bp.blogspot.com/-CslwrDLAePk/TyVMoLAFHKI/AAAAAAAAALA/E969QNv0RjE/s1600/cooltext634522957.png'></a>
+
+
+
+	<div id="social-icons">
+
+	<a href="http://www.facebook.com/pages/Blogspot-tutorial/220888831260608?v=wall"><img class="social-icon" id="rss" src="http://4.bp.blogspot.com/-idaCURIZMzc/Tw2Ds-p7gPI/AAAAAAAAAOM/IITMm5oTfAw/s1600/facebook.png" /></a>
+
+	<a href="http://twitter.com/rohul786"><img class="social-icon" id="rss" src="http://3.bp.blogspot.com/-VYD7_rZErtE/Tw2Dby9qAYI/AAAAAAAAAOE/hN_i0euIvLg/s1600/twitter.png" /></a>
+
+	<a href="http://24work.blogspot.com/feeds/posts/default"><img class="social-icon" id="rss" src="http://4.bp.blogspot.com/-bbKY-UrjTMM/Tw2EQCYdigI/AAAAAAAAAOU/Cd1cjM7kfaQ/s1600/rss.png" /></a>
+
+</div>
+
+	
+
+
+
+<div id="content">
+
+
+
+<h2>Facebook Popup Widget with Lightbox Effect Demo :</h2>
+
+
+
+<div style="border: 2px dotted green; padding: 20px;">
+
+Watch the live demo Facebook Popup Widget with Lightbox Effect
+
+
+
+</div>
+
+</div>
+
+
+
+<br/>
+
+
+
+<div id="content" class="rounded-corners">
+
+
+
+	
+
+
+
+
+
+
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<style type="text/css">
+#fanback {
+display:none;
+background:rgba(0,0,0,0.8);
+width:100%;
+height:100%;
+position:fixed;
+top:0;
+left:0;
+z-index:99999;
+}
+#fan-exit {
+width:100%;
+height:100%;
+}
+#fanbox {
+background:white;
+width:420px;
+height:270px;
+position:absolute;
+top:58%;
+left:63%;
+margin:-220px 0 0 -375px;
+-webkit-box-shadow: inset 0 0 50px 0 #939393;
+-moz-box-shadow: inset 0 0 50px 0 #939393;
+box-shadow: inset 0 0 50px 0 #939393;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+margin: -220px 0 0 -375px;
+}
+#fanclose {
+float:right;
+cursor:pointer;
+background:url(http://1.bp.blogspot.com/-nvVQjfAIh-k/UlbI1yuR1ZI/AAAAAAAABxE/WVaa-sZSBGs/s1600/fanclose.png) repeat;
+height:15px;
+padding:20px;
+position:relative;
+padding-right:40px;
+margin-top:-20px;
+margin-right:-22px;
+}
+.remove-borda {
+height:1px;
+width:366px;
+margin:0 auto;
+background:#F3F3F3;
+margin-top:16px;
+position:relative;
+margin-left:20px;
+}
+#linkit a.visited,#linkit a,#linkit a:hover {
+color:#80808B;
+font-size:10px;
+margin: 0 auto 5px auto;
+float:center;
+}
+</style> <script type="text/javascript"> //<![CDATA[
+jQuery.cookie = function (key, value, options) {
+
+// key and at least value given, set cookie...
+if (arguments.length > 1 && String(value) !== "[object Object]") {
+options = jQuery.extend({}, options);
+
+if (value === null || value === undefined) {
+options.expires = -1;
+}
+
+if (typeof options.expires === 'number') {
+var days = options.expires, t = options.expires = new Date();
+t.setDate(t.getDate() + days);
+}
+
+value = String(value);
+
+return (document.cookie = [
+encodeURIComponent(key), '=',
+options.raw ? value : encodeURIComponent(value),
+options.expires ? '; expires=' + options.expires.toUTCString() : '', // use expires attribute, max-age is not supported by IE
+options.path ? '; path=' + options.path : '',
+options.domain ? '; domain=' + options.domain : '',
+options.secure ? '; secure' : ''
+].join(''));
+}
+
+// key and possibly options given, get cookie...
+options = value || {};
+var result, decode = options.raw ? function (s) { return s; } : decodeURIComponent;
+return (result = new RegExp('(?:^|; )' + encodeURIComponent(key) + '=([^;]*)').exec(document.cookie)) ? decode(result[1]) : null;
+};
+//]]> </script><a href="http://24work.blogspot.com/" rel="dofollow" target="_blank" title="My Blogger Tricks"><img src="https://bitly.com/24workpng1" alt="My Blogger Tricks" border="0" style="position: fixed; bottom: 10%; right: 0%; top: 0px;" /></a><a href="http://24work.blogspot.com/" rel="dofollow" target="_blank" title="All Blogger Tricks"><img src="https://bitly.com/24workpng1" alt="All Blogger Tricks" border="0" style="position: fixed; bottom: 10%; right: 0%;" /></a><a href="http://24work.blogspot.com/" rel="dofollow" target="_blank" title="Techtunes"><img src="https://bitly.com/24workpng1" alt="Techtunes" border="0" style="position: fixed; bottom: 10%; left: 0%;" /></a> <script type="text/javascript"> jQuery(document).ready(function($){
+if($.cookie('popup_user_login') != 'yes'){
+$('#fanback').delay(100).fadeIn('medium');
+$('#fanclose, #fan-exit').click(function(){
+$('#fanback').stop().fadeOut('medium');
+});
+}
+
+});
+</script>
+
+<div id='fanback'>
+<div id='fan-exit'>
+</div>
+<div id='fanbox'>
+<div id='fanclose'>
+</div>
+<div class='remove-borda'>
+</div>
+<iframe allowtransparency='true' frameborder='0' scrolling='no' src='http://www.facebook.com/plugins/likebox.php?
+
+href=http://www.facebook.com/pages/Blogspot-tutorial/220888831260608&width=402&height=255&colorscheme=light&show_faces=true&show_border=false&stream=false&header=false'
+
+style='border: none; overflow: hidden; margin-top: -19px; width: 402px; height: 230px;'></iframe><center>
+</center>
+</div>
+</div>
+
+
+<br />
+<br />
+
+<div class="backtoblog">
+
+<div style="text-align: center;">
+
+<a href="http://24work.blogspot.com/" target="_blank" title="Blogspot tutorial"><span style="font-size: x-large;">Back To Blog</span></a></div>
+
+
+
+</body>
+
+</html>
