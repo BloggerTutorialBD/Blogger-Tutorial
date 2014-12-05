@@ -1,0 +1,1159 @@
+﻿<html>
+
+
+<!-- Start www.24work.blogspot.com: Changing the Blogger Title Tag -->
+<title>Related Posts Widget For Blogger Live Demo tutorial</title>
+<link href='http://24work.blogspot.com/favicon.ico' rel='icon' type='image/gif'/>
+
+
+<style>
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     premium blogger templates
+Date:     january 2011
+Created by: admin
+URI: http://bdlab.blogspot.com
+----------------------------------------------- */
+/* Variable definitions
+====================
+
+/* Nav Bar----------------------------------------------- */
+/* ===================================================================================== */
+/* Header & Navigation
+/* ===================================================================================== */
+header {
+margin-top: 30px;
+margin-bottom: 20px;
+}
+header > #nav {
+width: 960px;
+padding:0;
+-webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+}
+header h1#logo {
+display: block;
+float: left;
+margin: 0;
+width: 160px;
+height: 95px;
+background: url("http://2.bp.blogspot.com/-KBwG0BSt2Bg/UaS_MXhYNNI/AAAAAAAAA58/Ef3pPnXjgbc/s1600/logo-bg-orange.png") no-repeat center center transparent;
+}
+header h1#logo a {
+display: block;
+background: url("http://2.bp.blogspot.com/-j4GY1G53QaA/UaS-XdVexDI/AAAAAAAAA5c/6WS065qsBNY/s1600/24works+blogspot+header+2.png") no-repeat center center transparent;
+font: 0/0 a;
+color: transparent;
+text-shadow: none;
+background-color: transparent;
+border: 0;
+width: 100%;
+height: 100%;
+}
+header nav#secondary-navigation {
+height: 45px;
+background: url("http://4.bp.blogspot.com/-9f-paV5DMIk/UaS_MO_qbGI/AAAAAAAAA5w/j43gvCrG68c/s1600/second-nav-bg.png") repeat-x;
+}
+header nav#secondary-navigation ul {
+padding: 8px 20px;
+}
+header nav#secondary-navigation ul li {
+float: left;
+list-style: none;
+}
+header nav#secondary-navigation ul li ul {
+padding: 2px;
+}
+header nav#secondary-navigation ul li ul li {
+float: left;
+margin-right: 10px;
+list-style: inside;
+color: #ffffff;
+}
+header nav#secondary-navigation ul li ul li:first-child {
+list-style: none;
+margin-right: 10px;
+}
+header nav#secondary-navigation ul li ul li:last-child {
+margin-right: 0;
+}
+header nav#secondary-navigation ul li ul li a {
+color: #ffffff;
+}
+header nav#secondary-navigation ul li ul li a:hover {
+color: #f47e00;
+}
+header nav#secondary-navigation ul li ul li.dropdown > a:hover {
+text-decoration: none;
+}
+header nav#secondary-navigation ul li ul li.dropdown > a > span {
+margin-top: 2px;
+}
+header nav#secondary-navigation ul li ul li.dropdown > ul.dropdown-menu {
+min-width: 120px;
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+border: 0;
+-webkit-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
+box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
+background: #eeeeee;
+padding: 5px 0;
+margin: 0 0 0 10px;
+}
+header nav#secondary-navigation ul li ul li.dropdown > ul.dropdown-menu > li {
+margin: 0;
+padding: 0;
+list-style: none;
+display: block;
+background: transparent !important;
+float: none;
+}
+header nav#secondary-navigation ul li ul li.dropdown > ul.dropdown-menu > li > a {
+display: block;
+color: #535353;
+padding: 5px 10px;
+margin: 0;
+background: none !important;
+}
+header nav#secondary-navigation ul li ul li.dropdown > ul.dropdown-menu > li > a:hover {
+color: #f47e00;
+}
+header nav#secondary-navigation ul li:first-child {
+margin-right: 20px;
+}
+#colorNav{
+background:url(http://4.bp.blogspot.com/-Kg_F47Y7C94/UaS_L0m9oDI/AAAAAAAAA5s/HaD_QBF3qj4/s1600/main-nav-bg.png) repeat-x;
+height:50px;
+}
+#colorNav > ul{
+z-index:9999;
+position:relative;
+width:1000px;
+margin:0 auto;
+}
+#colorNav > ul > li{ /* will style only the top level li */
+list-style: none;
+line-height: 48px;
+display: inline-block;
+position:relative;
+}
+#colorNav > ul > li:hover,#colorNav  ul  li.home{
+background-color: #F47E00;
+}
+#colorNav > ul > li > a{
+color: white;
+text-decoration: none !important;
+font-size: 16px;
+padding: 16px;
+text-transform: uppercase;
+font-weight: bold;
+font-family: "Helvetica", sans-serif;
+}
+#colorNav li ul{
+position:absolute;
+list-style:none;
+text-align:center;
+width:180px;
+left:50%;
+margin-left:-90px;
+top:32px;
+font:bold 12px 'Open Sans Condensed', sans-serif;
+/* This is important for the show/hide CSS animation */
+max-height:0px;
+overflow:hidden;
+-webkit-transition:max-height 0.4s linear;
+-moz-transition:max-height 0.4s linear;
+transition:max-height 0.4s linear;
+}
+#colorNav li ul li{
+background-color:#313131;
+}
+#colorNav li ul li a{
+padding:12px;
+color:#fff !important;
+text-decoration:none !important;
+display:block;
+}
+#colorNav li ul li:nth-child(odd){ /* zebra stripes */
+background-color:#363636;
+}
+#colorNav li ul li:hover{
+background-color:#444;
+}
+#colorNav li ul li:first-child{
+border-radius:3px 3px 0 0;
+margin-top:25px;
+position:relative;
+}
+#colorNav li ul li:first-child:before{ /* the pointer tip */
+content:'';
+position:absolute;
+width:1px;
+height:1px;
+border:5px solid transparent;
+border-bottom-color:#313131;
+left:50%;
+top:-10px;
+margin-left:-5px;
+}
+#colorNav li ul li:last-child{
+border-bottom-left-radius:3px;
+border-bottom-right-radius:3px;
+}
+/* This will trigger the CSS */
+/* transition animation on hover */
+#colorNav li:hover ul{
+max-height:300px; /* Increase when adding more dropdown items */
+}
+#footer{background:#222;clear:both;width:100%;position:relative;text-align:left;color:#222;margin:0 auto;padding:0;border-top:5px solid #F2F2F2;box-shadow:0 -5px 5px #232323;-moz-box-shadow::0 -5px 5px #232323;-webkit-box-shadow::0 -5px 5px #232323}
+#foot{width:980px;clear:both;float:center;line-height:1.6em;margin:0 auto;padding:0}
+.footer-botl {font-size:13px;width:310px;margin-right:20px;float:left}
+.footer-botc {font-size:13px;width:316px;margin-right:20px;float:left}
+.footer-botr {font-size:13px;width:310px;float:left}
+.footer-botl .widget, .footer-botc .widget, .footer-botr .widget{background:#EAEAEA url(http://lh5.ggpht.com/-LnLBgu2NKr8/TgX26p_x8GI/AAAAAAAAFFc/wRxVHo_jB9A/background_box_thumb%25255B1%25255D.gif) repeat scroll left top;color:#000;margin-top:15px;margin-bottom:20px;padding:15px;border:1px outset #E6E6E6;-moz-box-shadow:3px 3px 1px #E6E6E6;-webkit-box-shadow:3px 3px 1px #222;box-shadow:3px 3px 1px #E6E6E6;-moz-border-radius-topleft:5px;border-top-left-radius:5px;-webkit-border-top-left-radius:5px}
+.footer-botl a, .footer-botc a, .footer-botr a{color:#084B8A;text-decoration:none}
+.footer-botl h2, .footer-botc h2, .footer-botr h2{font-size:18px;color:#222;text-transform:uppercase;font-weight:700;font-family:Georgia, "Times New Roman", Times, serif;text-decoration:none;text-shadow:1px 1px 2px #fff;margin-top:10px;padding-bottom:10px}
+.footer-botl ul, .footer-botc ul, .footer-botr ul{color:#222;margin:0;padding:0}
+.footer-botl ul li, .footer-botc ul li, .footer-botr ul li{list-style-type:none;background:url(http://2.bp.blogspot.com/_agyGrqSGoe4/SMc8m8-FTcI/AAAAAAAAACE/n1c7Rx0omgw/s400/link_arrow.png) no-repeat 0 5px;padding-left:15px;margin-bottom:8px}
+.footer-botl a:hover, .footer-botc a:hover, .footer-botr a:hover{border-bottom:1px dotted #222;color:#000}
+#page-footer{font-family:arial,verdana;background:#222;color:#FFF;text-align:center;overflow:hidden;position:relative;font-size:12px;padding:15px 0 15px}
+#page-footer a{text-decoration:none;font-size:12px;color:#F2F2F2}
+#page-footer a:hover{text-decoration:none;color:#FFF;border:none}
+
+--></style>
+<style type="text/css">
+/* General -----------------------------------------------*/
+
+body {
+background: url(http://2.bp.blogspot.com/_jM8-wHc3NKY/TTn1fs8EP7I/AAAAAAAAASg/iemyCUBOEmw/s1600/bgpattern.png);
+margin:0;
+color:#191919;
+font:x-small Helvetica;
+font-size/* */:/**/small;
+font-size: /**/small;
+}
+a:link {
+color:#dc0771;
+text-decoration:none;
+}
+a:visited {
+color:#dc0771;
+text-decoration:none;
+}
+a:hover {
+color:#dc0771;
+text-decoration:underline;
+}
+a img {
+border-width:0;
+}
+
+
+
+
+
+
+
+h2 {
+    text-transform:initial !important; gia, 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Header-----------------------------------------------*/
+#header-wrapper{width:960px;margin:0 auto 0;padding-top:10px;padding-bottom:10px;border-top:1px solid #222222;height:126px;background-color:#D6D91A}
+#header-inner{background-position:center;margin-left:auto;margin-right:auto}
+#header{float:left;width:47%;height:75px;margin:0;border:0 solid #cccccc;text-align:center;color:#FCF7F7}
+#header2{float:right;width:50%;height:75px}
+#header2 .widget{float:right;margin-top:5px;margin-right:10px}
+#header h1{background:url() no-repeat;margin:5px 5px 0 0;padding-left:0;padding-top:0;line-height:1.2em;text-transform:uppercase;letter-spacing:.2em;font:normal normal 200% Georgia,Serif}
+#header a{color:#666666;text-decoration:none}
+#header a:hover{color:#666666}
+#header .description{margin:0 5px 5px;padding:0 20px 15px;max-width:700px;text-transform:uppercase;letter-spacing:.2em;line-height:1.4em;font:normal normal 78% 'Trebuchet MS',Trebuchet,Arial,Verdana,Sans-serif;color:#999999;display:none}
+#header img{margin-left:auto;margin-right:auto}
+
+
+
+
+
+/* Outer-Wrapper----------------------------------------------- */
+#outer-wrapper{width:960px;margin:0px auto;padding:0;text-align:$startSide;font:$bodyfont;background: #fff url(http://4.bp.blogspot.com/-uxdO0zNhPbw/TzitRF9zadI/AAAAAAAABMs/4diN_JVhp4I/s1600/container-background.png) top left repeat-x;}
+#content-wrapper{background: #fff;}
+#main-wrapper{width:610px;padding-left:15px;padding-right:0px;float:left;word-wrap:break-word;/* fix for long text breaking sidebar float in IE */
+overflow:hidden;/* fix for long non-text content breaking IE sidebar float */
+}
+#rsidebar-wrapper{width:305px;float:right;margin-left:5px;margin-right:5px;word-wrap:break-word;/* fix for long text breaking sidebar float in IE */
+overflow:hidden;/* fix for long non-text content breaking IE sidebar float */
+}
+/* Headings----------------------------------------------- */
+h2{margin:1.5em 0 .75em;font:$headerfont;line-height:1.4em;text-transform:uppercase;letter-spacing:.2em;color:$sidebarcolor}
+/* Posts-----------------------------------------------*/
+
+h2.date-header{margin:1.5em 0 .5em}
+.postwrap{border: 1px solid #b5b5b5;margin:0px;padding:0px;margin-bottom:20px;}
+.post{margin: 0px 0 0px 0;background: url(http://4.bp.blogspot.com/-qrHl7R5v3Ow/Tzitxd_HkiI/AAAAAAAABM0/P8zOssQlYdI/s1600/post-background.png) top left repeat-x;border:1px solid #ffffff;padding:15px 15px 10px 15px;}
+.post h3{margin:0 0 8px 0;padding:0;font-size:22px;font-family: Arial, Verdana;color:#323232;}
+.post h3 a,.post h3 a:visited,.post h3 strong{display:block;text-decoration:none;color:#323232;font-size:22px;font-family: Arial, Verdana;}
+.post h3 strong,.post h3 a:hover{color:#c62703;font-size:22px;font-family: Arial, Verdana;text-decoration:none;}
+.post-body{margin:0 0 .75em;text-align:justify;padding-top:8px;font-family:Arial,Verdana;font-size:14px;color:#474747;}
+.post-body blockquote{overflow:hidden;padding-left:9px;font-style:italic;color:#666;border-left:3px solid #CADAE7;}
+.post-footer{margin:.75em 0;color:$sidebarcolor;text-transform:uppercase;letter-spacing:.1em;font:$postfooterfont;line-height:1.4em}
+.comment-link{margin-$startSide:.6em}
+.post img{padding:0px;background:#eeeeee;border:0px solid #f6ce77;margin:0 4px 4px 0}
+
+
+
+
+.code{
+color: black;
+font-family:Courier New;
+font-size:9pt;
+width:90%px;
+overflow:auto;
+repeat-y;
+max-height:200px;
+margin:5px 10px;
+padding: 4px 10px 0px 40px;
+/*--Background of lined paper--*/
+background:url(http://2.bp.blogspot.com/_4HKUHirY_2U/SwvYtNp8iUI/AAAAAAAAAUM/0UnYmLgLebk/pre_code_bg.gif) repeat-y left top;
+white-space: no-wrap;
+display: block; /* -- this make the background wraps the text correctly */
+}
+.code:hover{
+-webkit-box-shadow: 0px 0px 10px  rgba(0, 0, 0, .3);
+-moz-box-shadow: 0px 0px 10px  rgba(0, 0, 0, .3);
+box-shadow: 0px 0px 10px  rgba(0, 0, 0, .3);
+}
+blockquote { margin: 1em 3em; padding: .5em 1em; border-left: 5px solid #fce27c; background-color: #f6ebc1; } blockquote p { margin: 0; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.button{
+font:15px Calibri, Arial, sans-serif;
+text-shadow:1px 1px 0 rgba(255,255,255,0.4);
+text-decoration:none !important;
+white-space:nowrap;
+display:inline-block;
+vertical-align:baseline;
+position:relative;
+cursor:pointer;
+padding:10px 20px;
+background-repeat:no-repeat;
+background-position:bottom left;
+background-image:url('https://lh6.googleusercontent.com/-4cWMlF-uqh4/TltCfL8C4DI/AAAAAAAABhE/qNaNueMVpCU/s144/button_bg.png');
+background-position:bottom left, top right, 0 0, 0 0;
+background-clip:border-box;
+-moz-border-radius:8px;
+-webkit-border-radius:8px;
+border-radius:8px;
+-moz-box-shadow:0 0 1px #fff inset;
+-webkit-box-shadow:0 0 1px #fff inset;
+box-shadow:0 0 1px #fff inset;
+-webkit-transition:background-position 1s;
+-moz-transition:background-position 1s;
+transition:background-position 1s;
+}
+.button:hover{
+background-position:top left;
+background-position:top left, bottom right, 0 0, 0 0;
+}
+.button:active{
+bottom:-1px;
+}
+/* The three buttons sizes */
+.button.big	{ font-size:30px;}
+.button.medium	{ font-size:18px;}
+.button.small	{ font-size:13px;}
+/* Green Button */
+.green.button{
+color:#345903 !important;
+border:1px solid #96a37b !important;
+background-color: #79be1e;
+background-image:url('https://lh6.googleusercontent.com/-4cWMlF-uqh4/TltCfL8C4DI/AAAAAAAABhE/qNaNueMVpCU/s144/button_bg.png'), url('https://lh6.googleusercontent.com/-4cWMlF-uqh4/TltCfL8C4DI/AAAAAAAABhE/qNaNueMVpCU/s144/button_bg.png'), -moz-radial-gradient(center bottom, circle, rgba(162,211,30,1) 0,rgba(162,211,30,0) 100px),-moz-linear-gradient(#82cc27, #74b317);
+background-image:url('https://lh6.googleusercontent.com/-4cWMlF-uqh4/TltCfL8C4DI/AAAAAAAABhE/qNaNueMVpCU/s144/button_bg.png'), url('https://lh6.googleusercontent.com/-4cWMlF-uqh4/TltCfL8C4DI/AAAAAAAABhE/qNaNueMVpCU/s144/button_bg.png'), -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, from(rgba(162,211,30,1)), to(rgba(162,211,30,0))),-webkit-gradient(linear, 0% 0%, 0% 100%, from(#82cc27), to(#74b317));
+}
+.green.button:hover{
+background-color:#89d228;
+background-image:url('https://lh6.googleusercontent.com/-4cWMlF-uqh4/TltCfL8C4DI/AAAAAAAABhE/qNaNueMVpCU/s144/button_bg.png'), url('https://lh6.googleusercontent.com/-4cWMlF-uqh4/TltCfL8C4DI/AAAAAAAABhE/qNaNueMVpCU/s144/button_bg.png'), -moz-radial-gradient(center bottom, circle, rgba(183,229,45,1) 0,rgba(183,229,45,0) 100px),-moz-linear-gradient(#90de31, #7fc01e);
+background-image:url('https://lh6.googleusercontent.com/-4cWMlF-uqh4/TltCfL8C4DI/AAAAAAAABhE/qNaNueMVpCU/s144/button_bg.png'), url('https://lh6.googleusercontent.com/-4cWMlF-uqh4/TltCfL8C4DI/AAAAAAAABhE/qNaNueMVpCU/s144/button_bg.png'), -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, from(rgba(183,229,45,1)), to(rgba(183,229,45,0))),-webkit-gradient(linear, 0% 0%, 0% 100%, from(#90de31), to(#7fc01e));
+}
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  /*---CSS bubble "Read More" by 24work ---*/
+.readmore { float:right; display:block; height: 16px;line-height: 16px;background:#fc7e1a;text-transform:uppercase;font-size:12px;padding:0 3px}
+a.readmore {color:#fff}
+
+.jump-link { font-weight:bold; border-radius:0px; padding:0 15px; float:right; background:#C0C0C0; height:20px; line-height:20px }
+.jump-link{ font:15px Calibri, Arial, sans-serif; text-shadow:1px 1px 0 rgba(255,255,255,0.4); text-decoration:none !important; white-space:nowrap; display:inline-block; vertical-align:baseline; position:relative; cursor:pointer; padding:10px 20px; background-repeat:no-repeat; background-position:bottom left; background-image:url('https://lh6.googleusercontent.com/-4cWMlF-uqh4/TltCfL8C4DI/AAAAAAAABhE/qNaNueMVpCU/s144/button_bg.png'); background-position:bottom left, top right, 0 0, 0 0; background-clip:border-box; -moz-border-radius:8px; -webkit-border-radius:8px; border-radius:8px; -moz-box-shadow:0 0 1px #fff inset; -webkit-box-shadow:0 0 1px #fff inset; box-shadow:0 0 1px #fff inset; -webkit-transition:background-position 1s; -moz-transition:background-position 1s; transition:background-position 1s; height:100; width:100px; font-size:20px; }
+.jump-link:hover{ background-position:top left; background-position:top left, bottom right, 0 0, 0 0; }
+.jump-link:active{ bottom:-1px; } /* The three buttons sizes */
+
+.jump-link.medium { font-size:18px;}
+.jump-link.small { font-size:13px;} /* green.button */
+.jump-link{
+        color:#345903 !important;
+        border:1px solid #96a37b !important;
+        background-color: #79be1e;
+        background-image:url('https://lh6.googleusercontent.com/-4cWMlF-uqh4/TltCfL8C4DI/AAAAAAAABhE/qNaNueMVpCU/s144/button_bg.png'), url('https://lh6.googleusercontent.com/-4cWMlF-uqh4/TltCfL8C4DI/AAAAAAAABhE/qNaNueMVpCU/s144/button_bg.png'), -moz-radial-gradient(center bottom, circle, rgba(162,211,30,1) 0,rgba(162,211,30,0) 100px),-moz-linear-gradient(#82cc27, #74b317);
+        background-image:url('https://lh6.googleusercontent.com/-4cWMlF-uqh4/TltCfL8C4DI/AAAAAAAABhE/qNaNueMVpCU/s144/button_bg.png'), url('https://lh6.googleusercontent.com/-4cWMlF-uqh4/TltCfL8C4DI/AAAAAAAABhE/qNaNueMVpCU/s144/button_bg.png'), -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, from(rgba(162,211,30,1)), to(rgba(162,211,30,0))),-webkit-gradient(linear, 0% 0%, 0% 100%, from(#82cc27), to(#74b317));
+      } .jump-link:hover{
+        background-color:#89d228;
+        background-image:url('https://lh6.googleusercontent.com/-4cWMlF-uqh4/TltCfL8C4DI/AAAAAAAABhE/qNaNueMVpCU/s144/button_bg.png'), url('https://lh6.googleusercontent.com/-4cWMlF-uqh4/TltCfL8C4DI/AAAAAAAABhE/qNaNueMVpCU/s144/button_bg.png'), -moz-radial-gradient(center bottom, circle, rgba(183,229,45,1) 0,rgba(183,229,45,0) 100px),-moz-linear-gradient(#90de31, #7fc01e);
+        background-image:url('https://lh6.googleusercontent.com/-4cWMlF-uqh4/TltCfL8C4DI/AAAAAAAABhE/qNaNueMVpCU/s144/button_bg.png'), url('https://lh6.googleusercontent.com/-4cWMlF-uqh4/TltCfL8C4DI/AAAAAAAABhE/qNaNueMVpCU/s144/button_bg.png'), -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, from(rgba(183,229,45,1)), to(rgba(183,229,45,0))),-webkit-gradient(linear, 0% 0%, 0% 100%, from(#90de31), to(#7fc01e));
+      }
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+.comment-bubble {
+float : right;
+width : 48px;
+height : 48px;
+background : url(http://1.bp.blogspot.com/_1fRuBdlSpLw/S-_7DPCITWI/AAAAAAAAAXU/EBCsy37ga2U/s1600/Comment+Bubble+%2815%29.png) no-repeat;
+font-size : 18px;
+margin-top : -15px;
+margin-right : 2px;
+text-align : center;
+position:float;
+}
+
+
+
+
+
+
+/* Sidebar Content----------------------------------------------- */
+.sidebar{margin:0 0 10px 0;font-size: 15px;}
+.sidebar a{text-decoration:none;color:#333}
+.sidebar a:hover{text-decoration:underline;color:#c62703}
+.sidebar h2{margin:10px 0 0 0;padding:4px 0 4px 12px;background:#d4d4d4;font-size:18px;font-family:Arial,Helvetica,Sans-serif;font-weight:bold;text-transform:uppercase;border-left:6px solid #b33519;color:#453e3e;text-shadow:0 1px 0 #fff;}
+.sidebar ul{list-style-type:none;margin:0 0 10px 0;padding:0}
+.sidebar ul li{padding: 3px 0px 3px 15px;margin:0;background: url(http://1.bp.blogspot.com/_4HKUHirY_2U/TKqyHaLjDTI/AAAAAAAADrM/C03-cImc_0c/bullet.gif) no-repeat top left;}
+.sidebar .widget{border-bottom:0 dotted $bordercolor;margin:0 0 0.5em;padding:0 0 0.5em}
+.main .widget{border-bottom:0 dotted $bordercolor;margin:0 0 1.5em;padding:0 0 1.5em}
+.main .Blog{border-bottom-width:0}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Profile ----------------------------------------------- */
+
+
+
+
+.profile-img{float:$startSide;margin-top:0;margin-$endSide:5px;margin-bottom:5px;margin-$startSide:0;padding:4px;border:1px solid $bordercolor}
+.profile-data{margin:0;text-transform:uppercase;letter-spacing:.1em;font:$postfooterfont;color:$sidebarcolor;font-weight:bold;line-height:1.6em}
+.profile-datablock{margin:.5em 0 .5em}
+.profile-textblock{margin:0.5em 0;line-height:1.6em}
+.profile-link{font:$postfooterfont;text-transform:uppercase;letter-spacing:.1em}
+#navbar-iframe{height:0;visibility:hidden;display:none}
+#pagemenucontainer{height:30px;margin-top:15px;float:right}
+#pagemenu{height:30px;float:right}
+#pagemenu,#pagemenu ul{padding:0;margin:0;list-style:none;line-height:1}
+#pagemenu{margin-bottom:1px}
+#pagemenu ul{float:left;list-style:none;margin:0 0 0 0;padding:0}
+#pagemenu li{float:left;list-style:none;margin:0;padding:0}
+#pagemenu ul li{list-style:none;margin:0;padding:0}
+#pagemenu li a,#pagemenu li a:link{color:#fff;display:block;margin:0 3px 0 3px;padding:7px 12px 7px 12px;text-decoration:none;text-transform:uppercase;font:bold 11px Arial,Helvetica,sans-serif;text-shadow:0 1px 0 #000}
+#pagemenu li a:hover,#pagemenu li a:active{background:#1e1d1d;color:#fff;display:block;text-decoration:none}
+#pagemenu li.current_page_item a{background:#1e1d1d;color:#fff}
+#pagemenu li:hover,#pagemenu li.sfhover{position:static}
+
+
+
+
+
+#navcontainer .current-cat a{background-color:#b33519;color:#fff}
+
+
+
+
+
+
+
+.postdate{padding:1px 4px;font:11px Arial,Verdana;background:#d4d4d4;color:#5b5b5b}
+.postdate img{border:none;vertical-align:middle;margin:2px;background:transparent;padding:0px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer ----------------------------------------------- */
+
+
+
+
+/* -- NUMBER PAGE NAVIGATION -- */
+.showpageNum a{font:15px Arial,Verdana;padding:2px 4px;margin:0 4px;text-decoration:none;border:0 solid #333;background:#efede5;color:#444444;border:1px solid #7a7878;}
+.showpageOf{margin:0 8px 0 0;color:#74cdf9;font:15px Arial,Verdana}
+.showpageNum a:hover{color:#000000;background:#fbe581;border:1px solid #626262}
+.showpageArea{margin:10px 0;font:15px Arial,Verdana;color:#111}
+.showpagePoint{color:#ffffff;font:bold 15px Arial,Verdana;padding:2px 4px;margin:2px;border:1px solid #7a7878;background:#d23d3d;text-decoration:none}
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+div.span-1,div.span-2,div.span-3,div.span-4,div.span-5,div.span-6,div.span-7,div.span-8,div.span-9,div.span-10,div.span-11,div.span-12,div.span-13,div.span-14,div.span-15,div.span-16,div.span-17,div.span-18,div.span-19,div.span-20,div.span-21,div.span-22,div.span-23,div.span-24{float:left;margin-right:10px}
+.span-1{width:30px}.span-2{width:70px}.span-3{width:110px}.span-4{width:150px}.span-5{width:190px}.span-6{width:230px}.span-7{width:270px}.span-8{width:310px}.span-9{width:350px}.span-10{width:390px}.span-11{width:430px}.span-12{width:470px}.span-13{width:510px}.span-14{width:550px}.span-15{width:590px}.span-16{width:630px}.span-17{width:670px}.span-18{width:710px}.span-19{width:750px}.span-20{width:790px}.span-21{width:830px}.span-22{width:870px}.span-23{width:910px}.span-24,div.span-24{width:950px;margin:0}input.span-1,textarea.span-1,input.span-2,textarea.span-2,input.span-3,textarea.span-3,input.span-4,textarea.span-4,input.span-5,textarea.span-5,input.span-6,textarea.span-6,input.span-7,textarea.span-7,input.span-8,textarea.span-8,input.span-9,textarea.span-9,input.span-10,textarea.span-10,input.span-11,textarea.span-11,input.span-12,textarea.span-12,input.span-13,textarea.span-13,input.span-14,textarea.span-14,input.span-15,textarea.span-15,input.span-16,textarea.span-16,input.span-17,textarea.span-17,input.span-18,textarea.span-18,input.span-19,textarea.span-19,input.span-20,textarea.span-20,input.span-21,textarea.span-21,input.span-22,textarea.span-22,input.span-23,textarea.span-23,input.span-24,textarea.span-24{border-left-width:1px!important;border-right-width:1px!important;padding-left:5px!important;padding-right:5px!important}input.span-1,textarea.span-1{width:18px!important}input.span-2,textarea.span-2{width:58px!important}input.span-3,textarea.span-3{width:98px!important}input.span-4,textarea.span-4{width:138px!important}input.span-5,textarea.span-5{width:178px!important}input.span-6,textarea.span-6{width:218px!important}input.span-7,textarea.span-7{width:258px!important}input.span-8,textarea.span-8{width:298px!important}input.span-9,textarea.span-9{width:338px!important}input.span-10,textarea.span-10{width:378px!important}input.span-11,textarea.span-11{width:418px!important}input.span-12,textarea.span-12{width:458px!important}input.span-13,textarea.span-13{width:498px!important}input.span-14,textarea.span-14{width:538px!important}input.span-15,textarea.span-15{width:578px!important}input.span-16,textarea.span-16{width:618px!important}input.span-17,textarea.span-17{width:658px!important}input.span-18,textarea.span-18{width:698px!important}input.span-19,textarea.span-19{width:738px!important}input.span-20,textarea.span-20{width:778px!important}input.span-21,textarea.span-21{width:818px!important}input.span-22,textarea.span-22{width:858px!important}input.span-23,textarea.span-23{width:898px!important}input.span-24,textarea.span-24{width:938px!important}.last{margin-right:0;padding-right:0}
+.last,div.last{margin-right:0}
+
+
+
+.topright{text-align:left;margin:20px 0 0 0}
+.topright a{color:#fff;text-decoration:none;font:11px Arial,Helvetica,sans-serif;vertical-align:top;text-transform:uppercase;text-shadow:0 1px 0 #000;margin-left:5px;}
+
+
+
+
+
+.comments-content a{
+color: #191919;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+
+<div id="outer-wrapper"><div id="wrap2">
+<!-- skip links for text browsers -->
+<span id="skiplinks" style="display:none;">
+<a href="#main">skip to main </a> |
+      <a href="#sidebar">skip to sidebar</a>
+</span>
+<div class="span-24" id="header-top">
+<div class="span-24">
+<div id="pagemenucontainer">
+<ul id="pagemenu">
+<li class="current_page_item"><a href="http://24work.blogspot.com/">Home</a></li>
+<li><a href="#">Advertise</a></li>
+<li><a href="#">Contact</a></li>
+<li><a href="#">Support</a></li>
+<li><a href="#">About</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div style="clear:both;"></div>
+<div id="header-wrapper">
+<div class="header section" id="header"><div class="widget Header" id="Header1">
+<div id="header-inner">
+<div class="titlewrapper">
+<h1 class="title">
+<a href="http://24work.blogspot.com/"><img src="http://2.bp.blogspot.com/-lVLkQ6CVRpQ/T9WBB4TiB2I/AAAAAAAABXs/SkqteLPYZ00/s1600/heder-24work-logo-+m1-p1111111111.png.png"></a>
+</h1>
+</div>
+<div class="descriptionwrapper">
+<p class="description"><span>24work Providing with Blogger Widgets, Blogger Templates, Blogger Tips, Blogger Tricks, Blogger Gadgets, Blogging Tips, Free Templates, High Quality Tutorial and Much More</span></p>
+</div>
+</div>
+</div></div>
+
+<div style="clear:both;"></div>
+</div>
+<div style="clear:both;"></div>
+<!-- header starts -->
+<header class="header">
+<div class="header728">
+<div class="section" id="header7">
+</div>
+</div>
+<div class="container" id="nav">
+<div class="roww">
+<!-- Logo & Navigation -->
+<div class="spaan12" id="mainnav" role="navigation">
+
+
+</div></div></div></header><div id="content-wrapper">
+<div class="crosscol section" id="crosscol">
+
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+
+
+
+
+<div id="main-wrapper">
+<div class="main section" id="main"><div class="widget HTML" id="HTML16">
+</div><div class="widget Blog" id="Blog1">
+<div class="blog-posts hfeed">
+<!-- google_ad_section_start(name=default) -->
+
+          <div class="date-outer">
+        
+
+          <div class="date-posts">
+        
+<div class="post-outer">
+<div class="postwrap">
+<div class="post hentry">
+<a name="2934947215783175571"></a>
+<h3 class="post-title entry-title">
+
+<a href="http://24work.blogspot.com/2012/01/related-posts-widget-for-blogger.html" target="_blank">Related Posts Widget For Blogger Live Demo tutorial</a>
+</h3>
+<div class="post-header-line-1"></div>
+<div class="postdate" style="width:100%;margin-bottom:-15px;">
+<img src="http://2.bp.blogspot.com/-lDdn3QNJHsE/TzigYrGwL7I/AAAAAAAABKg/srXh6Xq7vKs/s1600/user.png">
+admin
+<img src="http://1.bp.blogspot.com/-4_jzbOFZFfo/TzigX_Lub1I/AAAAAAAABKc/o6GyVVsdQS4/s1600/date.png">
+12:06 AM
+<img src="http://2.bp.blogspot.com/-vhcQeQHNA4A/Tzig_GknRtI/AAAAAAAABKs/XT30VGFyxO8/s1600/label.png">
+
+</div>
+<div class="post-body entry-content">
+<p>
+</b><br />
+<b>How to add HTML-CSS-Javascript Codes to your Blog ?</b>
+<br />
+<br />
+This is very simple and easy you only follow below steps and add this widget in your blog.<br />
+<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;"><img alt="Sign in To Your Blogger Account" border="0" src="http://1.bp.blogspot.com/-ZpyUWDXBNqU/UmUbYNcOoPI/AAAAAAAAB2k/tTJN0oTSRn0/s1600/blogger.com.png" title="Sign in To Your Blogger Account" /></div><br />
+<b><span style="color: magenta;">Step 1</span></b> Log-in to your <b style="background-color: orange;">Blogger account</b>.<br />
+<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;"><img alt="Select Blog That You Want To add code" border="0" src="http://1.bp.blogspot.com/-nZbMw1bsmvs/UmUdH0P0tJI/AAAAAAAAB2s/8gmYLytUnKU/s1600/blogger.com+2.png" title="Select Blog That You Want To add code" /></div><br />
+Select Blog That You Want To add code<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;"><img alt="Backup your Template" border="0" src="http://4.bp.blogspot.com/-Gm2jEvoLHDA/UmUeC_rROsI/AAAAAAAAB20/C1D7EAUkZAw/s1600/Backup+your+Template.png" title="Backup your Template" /></div><br />
+<br />
+<b><span style="color: magenta;">Step 2</span></b> Backup your Template.<br />
+<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;"><img alt="Click on The Template" border="0" src="http://2.bp.blogspot.com/-7MeYlvc8kLA/UmUeaQVb-_I/AAAAAAAAB28/G6cAbGrtlXA/s1600/blogger.com+3.png" title="Click on The Template" /></div><br />
+<br />
+<b><span style="color: magenta;">Step 3</span></b> Click on The <b style="background-color: cyan;">Template</b><br />
+<br />
+<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;"><img alt="Click on The &gt;&gt; Edit HTML" border="0" src="http://1.bp.blogspot.com/-c8ne7mzfAbo/UmUfJ-QxfuI/AAAAAAAAB3E/Jm-5dxURXOE/s1600/blogger.com+4.png" title="Click on The &gt;&gt; Edit HTML" /></div><br />
+<br />
+<br />
+<br />
+<b><span style="color: magenta;">Step 4</span></b> Click on The &gt;&gt; <b><span style="background-color: #f4cccc; color: purple;">Edit HTML</span>&nbsp; &gt;&gt; <span style="color: orange;">Proceed</span>.</b><br />
+<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;"><img alt="Edit Template HTML" border="0" src="http://3.bp.blogspot.com/-pILTMx2pSZo/UmUfz1nWFII/AAAAAAAAB3M/l_M6WNinG2w/s1600/Edit+Template+HTML.png" title="Edit Template HTML" /></div><br />
+<br />
+<br />
+<b><span style="color: magenta;">Step 5</span></b> Now find [by pressing  <kbd style="border-bottom-left-radius: 3px; border-bottom-right-radius: 3px; border-top-left-radius: 3px; border-top-right-radius: 3px; border: 1px solid gray; box-shadow: rgb(238, 238, 238) 1px 0px 1px 0px, rgb(204, 204, 204) 0px 2px 0px 2px, rgb(68, 68, 68) 0px 2px 0px 3px; font-size: 1.2em; margin: 2px 3px; padding: 1px 5px;">Ctrl</kbd><span style="font-family: Georgia, serif; font-size: 13.63636302947998px;">&nbsp;+&nbsp;</span><kbd style="border-bottom-left-radius: 3px; border-bottom-right-radius: 3px; border-top-left-radius: 3px; border-top-right-radius: 3px; border: 1px solid gray; box-shadow: rgb(238, 238, 238) 1px 0px 1px 0px, rgb(204, 204, 204) 0px 2px 0px 2px, rgb(68, 68, 68) 0px 2px 0px 3px; font-size: 1.2em; margin: 2px 3px; padding: 1px 5px;">F</kbd>&nbsp;] this code in the template:<br />
+<br />
+<br />
+<div class="code">&lt;div class='post-footer-line post-footer-line-1'/&gt;</div><br />
+If you cant find it then try finding this one<br />
+<br />
+<div class="code">&lt;p class='post-footer-line post-footer-line-1'/&gt;</div>OR<br />
+<br />
+<div class="code">&lt;div class='post-footer-line post-footer-line-2'/&gt;<br />
+&lt;div class='post-footer-line post-footer-line-3'/&gt;<br />
+&lt;/div&gt;<br />
+&lt;/div&gt;</div><br />
+And immediately <b><span style="color: red;">Below/After</span></b> it, paste this code:<br />
+<br />
+<br />
+Style 1:-<br />
+<br />
+<br />
+<br />
+<div class="code">&lt;script src='http://24work-new.googlecode.com/svn/trunk/24work-blogspot/related-posts/related-posts-min-1-ycode.js' type='text/javascript'/&gt;&lt;link href='http://24work-new.googlecode.com/svn/trunk/24work-blogspot/related-posts/related-posts-min-1.css' rel='stylesheet' type='text/css'/&gt;&lt;a href='http://24work.blogspot.com/' rel='dofollow' target='_blank' title='My Blogger Tricks'&gt;&lt;img alt='My Blogger Tricks' border='0' src='https://bitly.com/24workpng1' style='position: fixed; bottom: 10%; right: 0%; top: 0px;'/&gt;&lt;/a&gt;&lt;a href='http://24work.blogspot.com/' rel='dofollow' target='_blank' title='All Blogger Tricks'&gt;&lt;img alt='All Blogger Tricks' border='0' src='https://bitly.com/24workpng1' style='position: fixed; bottom: 10%; right: 0%;'/&gt;&lt;/a&gt;&lt;a href='http://24work.blogspot.com/' rel='dofollow' target='_blank' title='Latest Tips and Tricks'&gt;&lt;img alt='Latest Tips and Tricks' border='0' src='https://bitly.com/24workpng1' style='position: fixed; bottom: 10%; left: 0%;'/&gt;&lt;/a&gt;&lt;b:if cond='data:blog.pageType == &amp;quot;item&amp;quot;'&gt;&lt;div id='related-posts'&gt;&lt;b:loop values='data:post.labels' var='label'&gt;&lt;b:if cond='data:label.isLast != &amp;quot;true&amp;quot;'&gt;&lt;/b:if&gt;&lt;b:if cond='data:blog.pageType == &amp;quot;item&amp;quot;'&gt;&lt;script expr:src='&amp;quot;/feeds/posts/default/-/&amp;quot; + data:label.name + &amp;quot;?alt=json-in-script&amp;amp;callback=related_results_labels&amp;amp;max-results=5&amp;quot;' type='text/javascript'/&gt;&lt;/b:if&gt;&lt;/b:loop&gt;<br />
+<b>&lt;h2 class='title' style='color:#fff;background-color:#000;width:150px;'&gt;<span style="color: purple;">Related Topics</span>&lt;/h2&gt;</b><br />
+&lt;script type='text/javascript'&gt;<br />
+var currentposturl=&amp;quot;&lt;data:post.url/&gt;&amp;quot;;<br />
+<b><span style="color: magenta;">var maxresults=5;</span></b> &lt;!-- Increase To Show More Then 5 Related Post --&gt;<br />
+removeRelatedDuplicates(); printRelatedLabels();<br />
+&lt;/script&gt;<br />
+&lt;/div&gt;<br />
+&lt;/b:if&gt;</div><br />
+<br />
+<br />
+<br />
+<br />
+But, It is not easy to find a code manually.So Use Ctrl + F to find.<br />
+See The Image Below<br />
+<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;"><img alt="Edit Template HTML" border="0" src="http://2.bp.blogspot.com/-dFvi54kYuig/UmUj36Oa8QI/AAAAAAAAB3Y/JyZGWQw2bhk/s1600/Edit+Template+HTML+2.png" title="Edit Template HTML" /></div><br />
+<br />
+<br />
+<br />
+<br />
+1. Hold Ctrl on the keyboard and press F,(<span style="color: blue; font-size: large;">Ctrl+F is the shortcut to reach Find Bar in almost all browsers</span>)<br />
+2. A Find Bar will display, Type the code you want to search.<br />
+3. At once that code will <span style="background-color: yellow; font-size: large;">highlight</span> on the Page/Blog<br />
+4. Then you can edit/delete/modify <span style="background-color: yellow; font-size: large;">highlighted code</span>.<br />
+<br />
+
+
+<p></p>
+
+
+<style>
+
+#related-posts ul li {
+list-style-image:none;
+}#related-posts ul {
+list-style-type: none;
+margin: 0;
+padding: 5px 0;
+}
+#related-posts ul li {
+border: 0 none;
+margin: 5px 0;
+padding: 10px;
+position: relative;
+}
+#related-posts ul li:first-child {
+background: none repeat scroll 0 0 #FF4C54;
+width: 89%;
+}
+#related-posts ul li:first-child:after {
+content: "1";
+}
+#related-posts ul li:first-child + li {
+background: none repeat scroll 0 0 #FF764C;
+width: 87%;
+}
+#related-posts ul li:first-child + li:after {
+content: "2";
+}
+#related-posts ul li:first-child + li + li {
+background: none repeat scroll 0 0 #FFDE4C;
+width: 84%;
+}
+#related-posts ul li:first-child + li + li:after {
+content: "3";
+}
+#related-posts ul li:first-child + li + li + li {
+background: none repeat scroll 0 0 #C7F25F;
+width: 81%;
+}
+#related-posts ul li:first-child + li + li + li:after {
+content: "4";
+}
+#related-posts ul li:first-child + li + li + li + li {
+background: none repeat scroll 0 0 #33C9F7;
+width: 78%;
+}
+#related-posts ul li:first-child + li + li + li + li:after {
+content: "5";
+}
+#related-posts ul li:first-child + li + li + li + li + li {
+background: none repeat scroll 0 0 #7EE3C7;
+width: 75%;
+}
+#related-posts ul li:first-child + li + li + li + li + li:after {
+content: "6";
+}
+#related-posts ul li:first-child + li + li + li + li + li + li {
+background: none repeat scroll 0 0 #F6993D;
+width: 72%;
+}
+#related-posts ul li:first-child + li + li + li + li + li + li:after {
+content: "7";
+}
+#related-posts ul li:first-child + li + li + li + li + li + li + li {
+background: none repeat scroll 0 0 #F59095;
+width: 69%;
+}
+#related-posts ul li:first-child + li + li + li + li + li + li + li:after {
+content: "8";
+}
+#related-posts ul li:first-child + li + li + li + li + li + li + li + li {
+background: none repeat scroll 0 0 #C7F25F;
+width: 66%;
+}
+#related-posts ul li:first-child + li + li + li + li + li + li + li + li:after {
+content: "9";
+}
+#related-posts ul li:first-child:after, #related-posts ul li:first-child + li:after, #related-posts ul li:first-child + li + li:after, #related-posts ul li:first-child + li + li + li:after, #related-posts ul li:first-child + li + li + li + li:after, #related-posts ul li:first-child + li + li + li + li + li:after, #related-posts ul li:first-child + li + li + li + li + li + li:after, #related-posts ul li:first-child + li + li + li + li + li + li + li:after, #related-posts ul li:first-child + li + li + li + li + li + li + li + li:after {
+background: none repeat scroll 0 0 #353535;
+border-radius: 50% 50% 50% 50%;
+color: #FFFFFF;
+font-size: 25px;
+height: 30px;
+position: absolute;
+right: -17px;
+text-align: center;
+top: 1px;
+width: 30px;
+}
+#related-posts ul li a {
+color: #444444;
+font-size: 13px;
+text-decoration: none;
+}
+
+
+</style>
+
+
+
+
+
+<div id="related-posts">
+
+<h2 class="title" style="color:#fff;background-color:#000;width:150px;">Related Topics</h2>
+
+
+
+
+<ul>
+
+
+
+<li><a href="http://bit.ly/wmV0kq" target="_blank"><b>How to change mouse cursor in blogger blog to animated cursors</b></a></li>
+
+
+<li><a href="http://bit.ly/x4d7ln" target="_blank"><b>Numbered Page Navigation For Blogger New Script</b></a></li>
+
+
+<li><a href="http://bit.ly/vGLd4R" target="_blank"><b>Animated Recent posts for Blogger with Thumbnails - Simple Spy</b></a></li>
+
+
+<li><a href="http://bit.ly/xqQlgS" target="_blank"><b>17+ Featured Content Slider for Blogger Using jQuery</b></a>
+
+
+</li><li><a href="http://bit.ly/1fpoo5Q" target="_blank"><b>35+ Drop Down Menu Widget in Blogger - Horizontal Menus With CSS &amp; HTML Codes</b></a></li>
+
+
+<li><a href="http://bit.ly/13W8b3f" target="_blank"><b>Add Cute Custom Facebook Like Box To Blogger</b></a></li>
+
+
+
+<li><a href="http://bit.ly/z34nXX" target="_blank"><b>Add Static Facebook Pop Out Like Box with Smooth Jquery Hover Effect</b></a></li>
+
+
+
+</ul>
+</div>
+</div><div class="clear"></div>
+
+
+
+
+
+
+
+
+
+<div class="post-footer"><div class="clear"></div>
+<div class="post-footer-line post-footer-line-2"></div>
+<div class="post-footer-line post-footer-line-3"></div></div>
+</div>
+</div>
+</div></div></div></div>
+<div class="clear"></div>
+</div></div>
+</div>
+<div id="rsidebar-wrapper">
+<div class="sidebar section" id="sidebarright"><div class="widget HTML" id="HTML2">
+</div><div class="widget HTML" id="HTML10">
+<h2 class="title">Trending Now</h2>
+<div class="widget-content">
+<style type="text/css">
+.noop-random-posts ul li {
+    list-style-image:none;
+}.noop-random-posts ul {
+list-style-type: none;
+margin: 0;
+padding: 5px 0;
+}
+.noop-random-posts ul li {
+border: 0 none;
+margin: 5px 0;
+padding: 10px;
+position: relative;
+}
+.noop-random-posts ul li:first-child {
+background: none repeat scroll 0 0 #FF4C54;
+width: 89%;
+}
+.noop-random-posts ul li:first-child:after {
+content: "1";
+}
+.noop-random-posts ul li:first-child + li {
+background: none repeat scroll 0 0 #FF764C;
+width: 87%;
+}
+.noop-random-posts ul li:first-child + li:after {
+content: "2";
+}
+.noop-random-posts ul li:first-child + li + li {
+background: none repeat scroll 0 0 #FFDE4C;
+width: 84%;
+}
+.noop-random-posts ul li:first-child + li + li:after {
+content: "3";
+}
+.noop-random-posts ul li:first-child + li + li + li {
+background: none repeat scroll 0 0 #C7F25F;
+width: 81%;
+}
+.noop-random-posts ul li:first-child + li + li + li:after {
+content: "4";
+}
+.noop-random-posts ul li:first-child + li + li + li + li {
+background: none repeat scroll 0 0 #33C9F7;
+width: 78%;
+}
+.noop-random-posts ul li:first-child + li + li + li + li:after {
+content: "5";
+}
+.noop-random-posts ul li:first-child + li + li + li + li + li {
+background: none repeat scroll 0 0 #7EE3C7;
+width: 75%;
+}
+.noop-random-posts ul li:first-child + li + li + li + li + li:after {
+content: "6";
+}
+.noop-random-posts ul li:first-child + li + li + li + li + li + li {
+background: none repeat scroll 0 0 #F6993D;
+width: 72%;
+}
+.noop-random-posts ul li:first-child + li + li + li + li + li + li:after {
+content: "7";
+}
+.noop-random-posts ul li:first-child + li + li + li + li + li + li + li {
+background: none repeat scroll 0 0 #F59095;
+width: 69%;
+}
+.noop-random-posts ul li:first-child + li + li + li + li + li + li + li:after {
+content: "8";
+}
+.noop-random-posts ul li:first-child + li + li + li + li + li + li + li + li {
+background: none repeat scroll 0 0 #C7F25F;
+width: 66%;
+}
+.noop-random-posts ul li:first-child + li + li + li + li + li + li + li + li:after {
+content: "9";
+}
+.noop-random-posts ul li:first-child:after, .noop-random-posts ul li:first-child + li:after, .noop-random-posts ul li:first-child + li + li:after, .noop-random-posts ul li:first-child + li + li + li:after, .noop-random-posts ul li:first-child + li + li + li + li:after, .noop-random-posts ul li:first-child + li + li + li + li + li:after, .noop-random-posts ul li:first-child + li + li + li + li + li + li:after, .noop-random-posts ul li:first-child + li + li + li + li + li + li + li:after, .noop-random-posts ul li:first-child + li + li + li + li + li + li + li + li:after {
+background: none repeat scroll 0 0 #353535;
+border-radius: 50% 50% 50% 50%;
+color: #FFFFFF;
+font-size: 25px;
+height: 30px;
+position: absolute;
+right: -17px;
+text-align: center;
+top: 1px;
+width: 30px;
+}
+.noop-random-posts ul li a {
+color: #444444;
+font-size: 13px;
+text-decoration: none;
+}
+</style>
+<div class="noop-random-posts">
+
+
+<ul>
+
+
+
+<li><a href="http://bit.ly/wmV0kq" target="_blank"><b>How to change mouse cursor in blogger blog to animated cursors</b></a></li>
+
+
+<li><a href="http://bit.ly/x4d7ln" target="_blank"><b>Numbered Page Navigation For Blogger New Script</b></a></li>
+
+
+<li><a href="http://bit.ly/vGLd4R" target="_blank"><b>Animated Recent posts for Blogger with Thumbnails - Simple Spy</b></a></li>
+
+
+<li><a href="http://bit.ly/xqQlgS" target="_blank"><b>17+ Featured Content Slider for Blogger Using jQuery</b></a>
+
+
+</li><li><a href="http://bit.ly/1fpoo5Q" target="_blank"><b>35+ Drop Down Menu Widget in Blogger - Horizontal Menus With CSS &amp; HTML Codes</b></a></li>
+
+
+<li><a href="http://bit.ly/13W8b3f" target="_blank"><b>Add Cute Custom Facebook Like Box To Blogger</b></a></li>
+
+
+
+<li><a href="http://bit.ly/z34nXX" target="_blank"><b>Add Static Facebook Pop Out Like Box with Smooth Jquery Hover Effect</b></a></li>
+
+
+</ul>
+
+</div>
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+
+</span>
+</span>
+<div class="clear"></div>
+</div></div>
+<p></p></div>
+<!-- spacer for skins that want sidebar and main to be the same height-->
+<div class="clear">&nbsp;</div></div></div></div><div id="footer"><div id="foot"><div class="footer-botr section" id="footer-botr"></div>
+</div><div style="clear:both"></div>
+</div>
+<div id="page-footer">
+Copyright  2011 <a href="http://24work.blogspot.com/">Blogspot Tutorial</a> - All Rights Reserved.
+<br>
+Website powered by <a href="http://blogger.com">Blogger</a> and designed by <a href="http://24work.blogspot.com">Blogger Tips And Tricks</a> &amp; <br>
+This template is brought to you by : <a href="http://bdlab.blogspot.com" target="_blank" title="Blogspot Tutorial ">www.bdlab.blogspot.com</a>  |  <a href="http://24work.blogspot.com" target="_blank" title="free backlinks ">free backlinks</a>  |  <a href="http://24work.blogspot.com" target="_blank" title="Blogger Tips And Tricks ">www.24work.blogspot.com</a>
+</div>
+</body></html>

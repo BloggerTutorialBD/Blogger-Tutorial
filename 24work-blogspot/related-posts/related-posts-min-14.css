@@ -1,0 +1,24 @@
+#related-posts ul{padding-left:0px;}
+#related-posts ul li {background: #ffffff no-repeat scroll 5px 10px;
+list-style-type: none;
+margin:0 0 5px 0px;
+padding:5px 5px 5px 20px !important;
+border: 1px solid #dddddd;
+border-radius:7px;
+-moz-border-radius:7px;
+-webkit-border-radius:7px;
+}
+#related-posts ul li:hover {
+border:1px solid #555555;
+}
+
+#related-posts ul li a
+{
+text-decoration:none;
+font:16px Georgia, verdana;
+color:#333333;
+}
+#related-posts ul li a:hover {
+text-decoration:none;
+color:#555555;
+}

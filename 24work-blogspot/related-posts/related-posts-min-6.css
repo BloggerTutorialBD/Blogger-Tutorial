@@ -1,0 +1,35 @@
+#related-posts ul li a:hover{color:#fff;text-decoration:none}
+#related-posts ul li a {-webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; color: #333333; display: block; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 18px; margin: 0px 40px 0px 0px; min-height: 30px; orphans: 2; padding: 0px; text-align: -webkit-auto; text-decoration: none !important; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;}
+#related-posts ul li .item-thumbnail{float:left;border:0;margin-right:10px;background:transparent;padding:0;width:51px;height:51px}
+#related-posts ul li:first-child:after,
+#related-posts ul li:first-child + li:after,
+#related-posts ul li:first-child + li + li:after,
+#related-posts ul li:first-child + li + li + li:after,
+#related-posts ul li:first-child + li + li + li + li:after,
+#related-posts ul li:first-child + li + li + li + li + li:after,
+#related-posts ul li:first-child + li + li + li + li + li + li:after,
+#related-posts ul li:first-child + li + li + li + li + li + li + li:after,
+#related-posts ul li:first-child + li + li + li + li + li + li + li + li:after,
+#related-posts ul li:first-child + li + li + li + li + li + li + li + li + li:after{position:absolute;top:10px;right:5px;border-radius:50%;border:2px solid #ccc;background:#353535;-webkit-box-shadow:0px 0px 5px #000;-moz-box-shadow: 0px 0px 5px #000;width:30px;height:30px;line-height:1em;text-align:center;font-size:28px;color:#fff}
+#related-posts ul li:first-child + li + li + li + li + li + li + li {background:#DF01D7;width:90%}
+#related-posts ul li:first-child + li + li + li + li + li + li + li:after{content:"8"}
+#related-posts ul li:first-child + li + li + li + li + li + li + li +li{background:#B041FF;width:90%}
+#related-posts ul li:first-child + li + li + li + li + li + li + li + li:after{content:"9"}
+#related-posts ul li:first-child + li + li + li + li + li + li + li +li +li{background:#F52887;width:90%}
+#related-posts ul li:first-child + li + li + li + li + li + li + li + li + li:after{content:"10"}
+#related-posts ul li:first-child + li + li + li + li +li{background:#7ee3c7;width:90%}
+#related-posts ul li:first-child + li + li + li + li + li:after{content:"6"}
+#related-posts ul li:first-child + li + li + li + li + li +li{background:#f6993d;width:90%}
+#related-posts ul li:first-child + li + li + li + li + li + li:after{content:"7"}
+#related-posts ul li:first-child + li + li + li + li{background:#33c9f7;width:90%}
+#related-posts ul li:first-child + li + li + li + li:after{content:"5"}
+#related-posts ul li:first-child + li + li + li{background:#c7f25f;width:90%}
+#related-posts ul li:first-child + li + li + li:after{content:"4"}
+#related-posts ul li:first-child + li + li{background:#ffde4c;width:90%}
+#related-posts ul li:first-child + li + li:after{content:"3"}
+#related-posts ul li:first-child + li{background:#ff764c; width:90%}
+#related-posts ul li:first-child + li:after{content:"2"}
+#related-posts ul li:first-child{background:#ff4c54 ;width:90%}
+#related-posts ul li:first-child:after{content:"1"}
+#related-posts ul{margin:0;padding:0px 0;list-style-type:none}
+#related-posts ul li{position:relative;margin:6px 0;border-radius:25px 0px 25px 0px;border:2px solid #f7f7f7;-webkit-box-shadow:3px 3px 3px #000;-moz-box-shadow: 3px 3px 3px #000;padding:10px}

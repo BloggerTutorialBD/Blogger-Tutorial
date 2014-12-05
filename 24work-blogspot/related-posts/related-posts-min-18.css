@@ -1,0 +1,8 @@
+#related-posts {float:center;text-transform:none;height:100%;min-height:100%;padding-top:5px;padding-left:5px;margin-top: 20px;}
+#related-posts .widget{padding-left:6px;margin-bottom:10px;}
+#related-posts .widget h2, #related-posts h2{font-size: 17px;font-weight: normal;color: black;font-family: Arial Narrow;margin-bottom: 0.75em;padding-top: 0em;}
+#related-posts a{font-size:16px;color: #555555;font-variant:small-caps;}
+#related-posts a:hover{text-decoration: none;color: #ffffff;font-weight: bold;}
+#related-posts ul{list-style-type:none;margin:0 0 0px 0;padding:0px;text-decoration:none;text-color:#000000}
+#related-posts ul li{list-style-type: none;border-left: 2px solid #1399CF;border-bottom: 1px dotted #1399CF;margin-bottom: 3px;padding-left: 30px;padding-top:0px;}
+#related-posts ul li:hover{background-color: #1399CF;border-left: 2px solid #B3CA3D;border-bottom: 1px dotted #B3CA3D;}

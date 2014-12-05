@@ -1,0 +1,4 @@
+#related-posts a{color:#03032b;text-decoration:none;}
+#related-posts a:hover{color:#323233;text-decoration:none;}
+#related-posts ul{margin:10px 0 18px 0px;font-family:Georgia, "Times New Roman", Times, serif;list-style-type: none;}
+#related-posts ul li{padding-left:20px !important;margin-bottom:5px;margin-left:-15px;border:#03041c solid 1px;border-radius:5px;}

@@ -1,0 +1,48 @@
+#related-posts ul li a {
+background: none repeat scroll 0 0 #DDDDDD;
+color: #444444;
+display: block;
+margin: 0 0 0.5em;
+padding: 0.4em;
+position: relative;
+text-decoration: none;
+transition: all 0.3s ease-out 0s;
+}
+#related-posts ul li a:before {
+background: none repeat scroll 0 0 #CCCCCC;
+font-weight: 700;
+height: 2em;
+left: -2.5em;
+line-height: 2em;
+margin-top: -1em;
+position: absolute;
+text-align: center;
+top: 50%;
+width: 2em;
+}
+#related-posts ul li a:after {
+border: 0.5em solid transparent;
+content: "";
+left: -1em;
+margin-top: -0.5em;
+position: absolute;
+top: 50%;
+transition: all 0.3s ease-out 0s;
+}
+#related-posts ul li a:hover {
+background: none repeat scroll 0 0 #CCCCCC;
+}
+#related-posts ul li a:hover:after {
+border-left-color: #CCCCCC;
+left: -0.5em;
+}
+#related-posts ul li:first-child + li + li + li + li + li + li + li + li + li a:before{content:"10"}
+#related-posts ul li:first-child + li + li + li + li + li + li + li + li a:before{content:"9"}
+#related-posts ul li:first-child + li + li + li + li + li + li + li a:before{content:"8"}
+#related-posts ul li:first-child + li + li + li + li + li + li a:before{content:"7"}
+#related-posts ul li:first-child + li + li + li + li + li a:before{content:"6"}
+#related-posts ul li:first-child + li + li + li + li a:before{content:"5"}
+#related-posts ul li:first-child + li + li + li a:before{content:"4"}
+#related-posts ul li:first-child + li + li a:before{content:"3"}
+#related-posts ul li:first-child + li a:before{content:"2"}
+#related-posts ul li:first-child a:before{content:"1"}

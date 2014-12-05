@@ -1,0 +1,87 @@
+#related-posts ul li{
+
+line-height: 22px;
+
+float: left;
+
+clear: left;
+
+list-style-type: none;
+
+overflow: hidden;
+
+color: gray;
+
+}
+
+#related-posts ul{margin:0;padding:5px 0;list-style-type:none;}
+
+#related-posts ul li{position:relative;margin:5px 0;border:0;padding:10px;opacity:0.8;
+
+-webkit-transition:all 0.4s;
+
+-moz-transition:all 0.4s;
+
+-ms-transition:all 0.4s;
+
+-o-transition:all 0.4s;}
+
+#related-posts ul li:hover {border-radius:30px 0px 0px 0px;margin-left:10px;opacity:1.0}
+
+#related-posts ul li:first-child {background:#ff4c54;width:90%}
+
+#related-posts ul li:first-child:after{content:"1"}
+
+#related-posts ul li:first-child + li{background:#ff764c;width:88%}
+
+#related-posts ul li:first-child + li:after{content:"2"}
+
+#related-posts ul li:first-child + li + li{background:#ffde4c;width:86%}
+
+#related-posts ul li:first-child + li + li:after{content:"3"}
+
+#related-posts ul li:first-child + li + li + li{background:#c7f25f;width:84%}
+
+#related-posts ul li:first-child + li + li + li:after{content:"4"}
+
+#related-posts ul li:first-child + li + li + li + li{background:#33c9f7;width:82%;padding-right:20px;}
+
+#related-posts ul li:first-child + li + li + li + li:after{content:"5"}
+
+#related-posts ul li:first-child + li + li + li + li +li{background:#7ee3c7;width:80%}
+
+#related-posts ul li:first-child + li + li + li + li + li:after{content:"6"}
+
+#related-posts ul li:first-child + li + li + li + li + li +li{background:#f6993d;width:78%}
+
+#related-posts ul li:first-child + li + li + li + li + li + li:after{content:"7"}
+
+#related-posts ul li:first-child:after,
+
+#related-posts ul li:first-child + li:after,
+
+#related-posts ul li:first-child + li + li:after,
+
+#related-posts ul li:first-child + li + li + li:after,
+
+#related-posts ul li:first-child + li + li + li + li:after,
+
+#related-posts ul li:first-child + li + li + li + li + li:after,
+
+#related-posts ul li:first-child + li + li + li + li + li + li:after{position:absolute;top:15px;right:-5px;border-radius:9%;background:#353535;width:30px;height:40px;line-height:1em;text-align:center;font-size:22px;color:#fff;}
+
+#related-posts ul li .item-thumbnail{float:left;border:0;margin-right:10px;background:transparent;padding:0;width:30px;height:90px}
+
+#related-posts ul li a{font-size:12px;font-weight:bold;color:white;text-decoration:none;text-shadow:0px 0px 6px white;
+
+-webkit-transition:all 0.4s;
+
+-moz-transition:all 0.4s;
+
+-ms-transition:all 0.4s;
+
+-o-transition:all 0.4s;
+
+}
+
+#related-posts ul li a:hover{color:black;text-decoration:none;text-shadow:1px 1px 1px white;}

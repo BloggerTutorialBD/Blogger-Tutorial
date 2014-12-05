@@ -1,0 +1,56 @@
+#related-posts h2{
+padding:8px 10px 3px 0;
+width:100%;
+margin:0;
+font-size:16px;
+position:relative;
+left:-20px;
+display:block;
+border-bottom:2px solid #ccc;
+}
+#related-posts ul{
+list-style:none;
+counter-reset:li;
+padding:10px;
+width:100%;
+}
+#related-posts li{ /* Styles of each element */
+width:100%;
+position:relative;
+left:0;
+margin:0 0 6px 10px;
+padding:4px 5px;
+}
+#related-posts ul li:before{ /* Style of the numbers */
+content:counter(li);
+counter-increment:li;
+position:absolute;
+top:3px;
+left:-39px;
+font-size:21px;
+width:28px;
+height:28px;
+border-radius: 50%;
+color:#777; /* Text color */
+border: 2px solid #ddd; /* Rounded border color */
+padding:0;
+text-indent:9px;
+}
+#related-posts ul li a{
+display:block;
+position:relative;
+left:-45px;
+width:100%;
+margin:0;
+min-height:28px;
+padding: 5px 3px 3px 39px;
+color:#333; /* color of the links */
+text-decoration:none;
+font-size:14px; /* Font size of the links */
+font-style: italic;
+
+}
+#related-posts ul li a:hover{
+color:#3366ff;
+margin-left:3px;
+}

@@ -1,0 +1,59 @@
+#related-posts
+{
+float : left;
+width : 480px;
+margin-top:70px;
+margin-left : 5px;
+margin-bottom:16px;
+font : 14px Verdana;
+color:#333333;
+margin-bottom:10px;
+}
+#related-posts .widget
+{
+list-style-type : none;
+margin : 5px 0 5px 0;
+padding : 0;
+}
+#related-posts .widget h2, #related-posts h2
+{
+font : 20px Verdana;
+font-weight: bold;
+margin : 5px 7px 0;
+padding : 0 0 5px;
+color:#111111;
+}
+#related-posts a
+{
+text-decoration : none;
+color:#333333;
+}
+#related-posts a:hover
+{
+text-decoration : none;
+color:#ffffff;
+}
+#related-posts ul
+{
+border : medium none;
+margin : 10px;
+padding : 0;
+}
+#related-posts ul li
+{
+display : block;
+background : url('http://4.bp.blogspot.com/-7MiT_7yobZc/UmUWmtlCNkI/AAAAAAAAB2Y/EZFlvBdwTks/s1600/ul-icon.png') no-repeat 0 0;
+margin : 0;
+padding-top : 0;
+padding-right : 0;
+padding-bottom : 1px;
+padding-left : 21px;
+margin-bottom : 5px;
+line-height : 2em;
+border-bottom:2px dotted #333333;
+}
+#related-posts ul li:hover
+{
+background: #222222;
+color:#ffffff;
+}
